@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    curreny convertor
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div id="main">
+
+    <div class="box">
+      <form action="/" method="get">
+        <div class="inner_box">
+          <h2>Amount</h2>
+          <input type="text" name="Amount" placeholder="input money value">
+        </div>
+        <div class="inner_box">
+          <h2>from</h2>
+          <select id="from_inp" name="from">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="inner_box">
+          <h2>to</h2>
+          <select id="to_inp" name="to">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <button type="submit">convert</button>
+      </form>
+      <% if (data=="404" ) { %>
+        <input type="text" disabled value="..." id="result">
+        <% } else { %>
+          <input type="text" disabled value="<%= data %>" id="result">
+          <%}%>
+    </div>
+  </div>
+  <script src="\javascripts\script.js">
+  </script>
+</body>
+
+</html>

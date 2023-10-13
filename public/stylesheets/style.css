@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+.box {
+  /* height: 600px; */
+  /* width: 350px; */
+  background-color: #fff;
+  padding: 5vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+.box h2 {
+  padding: 5px;
+  font-size: 4rem;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5vh;
+}
+
+
+.inner_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: rebeccapurple; */
+  flex-direction: column;
+}
+
+select,
+input {
+  display: block;
+  padding: 1vh;
+  text-align: center;
+}
